@@ -1,0 +1,362 @@
+@import 'global';
+
+
+
+
+
+@keyframes strokAnim{
+    to {
+        stroke-dashoffset: 0;        
+    }
+}
+
+@keyframes fill{
+    from{
+        fill: transparent;        
+    }
+    to{
+        fill: $mainColor;
+    }
+} 
+
+@keyframes moveToPSN{
+    to{
+        top: 40%;
+        left: 20%;
+        transform: translate(0);
+        
+    }
+    
+}
+
+@keyframes moveToSteam{
+    to{
+        top: 40%;
+        right: 20%;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes fadeDown{
+    from{
+        opacity: 0;
+        transform: translate(50%, 40%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(50%, 50%);
+
+    }
+}
+
+@keyframes reduceOp{
+    to{
+        // background: rgba(0,0,0,.55);   
+        background: rgba(0, 0, 0, 0.35);     
+    }
+}
+
+@keyframes increaseOp{
+    to{
+        background: #000000;
+
+    }
+}
+
+@keyframes scaleUpPSN {
+    from{
+        top: 40%;
+        left: 20%;
+        transform: translate(0) scale(1);
+
+    }
+    to{
+        top: 40%;
+        left: 20%;
+        transform: translate(0) scale(1.1);
+    }
+}
+
+@keyframes scaleDownPSN {
+    from{
+        left: -20%;
+        bottom: -20%;
+        transform: translate(0) scale(1);
+
+    }
+    to{
+        left: -20%;
+        bottom: -20%;
+        transform: translate(0) scale(0.5);
+    }
+}
+
+@keyframes scaleUpSteam {
+
+    from{
+        top: 40%;
+        right: 20%;
+        transform: translate(0) scale(1);
+        
+    }
+    to{
+        top: 40%;
+        right: 20%;
+        transform: translate(0) scale(1.1);
+
+    }
+}
+
+@keyframes scaleDownSteam {
+    from{
+        right: -20%;
+        bottom: -20%;
+        transform: translate(0) scale(1);
+        
+    }
+    to{
+        right: -20%;
+        bottom: -20%;
+        transform: translate(0) scale(0.5);
+
+    }
+}
+
+@keyframes move-to-corner {
+    from{
+        opacity: 1;
+        transform: translate(50%, 50%);
+
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        height:4rem;
+    }
+}
+
+@keyframes shrank{
+    to{
+        width: 12rem;
+        transform: translate(0)
+    }
+    
+}
+
+@keyframes bubble {
+    0%{
+        opacity: 1;
+        transform: scale(0)
+    }
+    30%{
+        opacity: 1;
+
+        transform: scale(1.3)
+
+    }
+    70%{
+        opacity: 1;
+
+        transform: scale(.7)
+    }
+    
+    90%{
+        opacity: 1;
+
+        transform: scale(1.1)
+    }
+    100%{
+        opacity: 1;
+
+        transform: scale(1)
+        
+    }
+}
+
+@keyframes fadeUp {
+    from{
+        position: relative;
+        top: 10px;
+        opacity: 0;
+    }
+    to{
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes expansion {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes fadeDown-label {
+    from {
+        bottom: 15px;
+        opacity: 0;
+    }
+
+    to{
+        bottom: 5px;
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        height: 0;
+    }
+    to{
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@keyframes fadeDown-res {
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp-res {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin{
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes cracked{
+    0%{
+        transform: rotate(0deg)
+    }
+    30%{
+        transform: rotate(-190deg)
+
+    }
+    50%{
+        transform: rotate(-170deg)
+    }
+    70%{
+        transform: rotate(-185deg)
+    }
+    85%{
+        transform: rotate(-175deg)
+    }
+    100% {
+        transform: rotate(-180deg)
+    }
+}
+
+@keyframes diedlamb {
+    0%,10%, 75%, 100%{
+        color: transparent;
+    }
+    5%, 15%, 70%, 80%, 90%{
+        color: #f8b50a;
+    }
+}
+
+
+
+// ===================
+// media query
+
+
+@keyframes moveToPSN-mob{
+    to{
+        top: 40%;
+        left: -1%;
+        transform: translate(0);
+        
+    }
+    
+}
+
+@keyframes moveToSteam-mob{
+    to{
+        top: 40%;
+        right: -1%;
+        transform: translate(0);
+
+    }
+}
+
+
+
+@keyframes scaleUpPSN-mob {
+    from{
+        top: 40%;
+        left: -1%;
+        transform: translate(0) scale(1);
+
+    }
+    to{
+        top: 40%;
+        left: -1%;
+        transform: translate(0) scale(1.1);
+    }
+}
+
+@keyframes scaleUpSteam-mob {
+    from{
+        top: 40%;
+        right: -1%;
+        transform: translate(0) scale(1);
+
+    }
+    to{
+        top: 40%;
+        right: -1%;
+        transform: translate(0) scale(1.1);
+    }
+}
+
+@keyframes fadeDown-mob {
+    
+    from{
+        opacity: 0;
+        transform: translate(0, 40%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 50%);
+
+    }
+}
+@keyframes move-to-corner-mob {
+    from{
+        opacity: 1;
+        transform: translate(0, 50%);
+
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        height:4rem;
+    }
+}

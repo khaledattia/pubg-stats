@@ -1,0 +1,112 @@
+@media (max-width: 725px){
+    body#mob-view {
+        overflow-y: inherit;
+
+        #home {
+            > div.home {
+
+                header {
+                    div.logo {
+                        transform: translate(0, 50%);
+                        animation: fadeDown-mob 0.5s ease forwards 4.2s;
+
+                        img {
+                            width: 90vw;
+                        }
+                    }
+
+                    div.animate-logo {
+                        animation: move-to-corner-mob 0.45s ease forwards;
+                            
+                        a {
+                            cursor: pointer;
+        
+                            img {
+                                animation:shrank 0.45s ease forwards;
+                            }
+                        }
+                    }
+                }
+
+                .test {
+                    height: 48.4vh;
+
+                    svg.psn,svg.steam {
+                        width: 8rem;
+                    }
+
+                    svg.psn {
+                        animation: moveToPSN-mob 0.5s ease forwards 3.4s;
+
+                        &:hover {
+                            animation: scaleUpPSN-mob 0.35s ease forwards;
+                        }
+                    }
+
+                    svg.steam {
+                        animation: moveToSteam-mob 0.5s ease forwards 3.4s;
+
+                        &:hover {
+                            animation: scaleUpSteam-mob 0.35s ease forwards;
+                        }
+                    }
+                }
+            }
+
+
+
+            .test svg.fixed-psn-translate {
+                top: 40%;
+                left: -1%;
+            }
+            .test svg.fixed-steam-translate {
+                top: 40%;
+                right: -1%;
+            }
+
+            .error-cont p {
+                font-size: 25px;
+            }
+        }
+    
+        .srch-results {
+            padding-bottom: 30px;
+
+            .filter { 
+                flex-direction: column;
+                align-items: center;
+    
+                .filter-by-team {
+                    margin-bottom: 25px;
+                }
+            }
+            .analized .survival-combat {
+                flex-direction: column;
+                align-items: center; 
+    
+                .survival {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+
+        #home.search-results {
+            height: unset;
+            background-position: left; 
+            background-attachment: fixed;
+    
+            > div.home {
+                height: unset;
+            }
+
+        }
+
+        
+        .component .srch-form .form {
+            width: 80%;
+        }
+
+        
+    }
+}
