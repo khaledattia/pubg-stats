@@ -3,6 +3,9 @@
         overflow-y: inherit;
 
         #home {
+            #bg-op {
+                min-height: 100vh;
+            }
             > div.home {
 
                 header {

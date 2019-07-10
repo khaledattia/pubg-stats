@@ -172,7 +172,7 @@ class App extends Component {
         }
 
         if(this.state.fetch && this.state.status !== 404){
-            console.log("Loading...")
+            // console.log("Loading...")
             fetch(`https://api.pubg.com/shards/${this.props.match.params.platform}/players?filter[playerNames]=`+this.state.player, {
                 method: 'Get', 
 	            headers: {
@@ -212,8 +212,8 @@ class App extends Component {
                     })
                     .then(lifetime => lifetime.json())
                     .then(lftm => this.setState({data: lftm.data.attributes.gameModeStats}))
-                    .then(() => console.log(this.state.data))
-                    .then(() => console.log("Done"))
+                    // .then(() => console.log(this.state.data))
+                    // .then(() => console.log("Done"))
                     .catch(err => this.props.history.push(`/${this.props.match.params.platform}/name`))
                 }
             })
@@ -238,7 +238,7 @@ class App extends Component {
                     error: "Something Went Wrong!", 
                 }))
                 this.props.history.push(`/${this.props.match.params.platform}/error`)
-                console.log("Done")
+                // console.log("Done")
             })
 
         }

@@ -333,7 +333,7 @@ body{
         .form {
             text-align: center;
             flex-grow: 1;
-            margin-top: 10%;
+            margin-top: 4%;
             width: 40%;
 
             .valid-text {
@@ -667,12 +667,14 @@ body{
 
         .main-results {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             text-transform: capitalize;
 
             div {
                 text-align: center;
                 color: #e2e2e2;
+                flex: 100px;
 
                 h4 {
                     opacity: 0;
